@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Medicine Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💊 Smart Medicine Reminder</h1>
+        <p class="subtitle">Never miss your medicine</p>
+
+        <div class="form-box">
+            <input type="text" id="medicineName" placeholder="Enter medicine name">
+
+            <select id="medicineType">
+                <option value="">Select medicine type</option>
+                <option>Tablet</option>
+                <option>Capsule</option>
+                <option>Syrup</option>
+                <option>Injection</option>
+            </select>
+
+            <input type="time" id="medicineTime">
+
+            <button onclick="addMedicine()">Add Reminder</button>
+        </div>
+
+        <h2>Your Medicine Reminders</h2>
+        <div id="medicineList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
